@@ -1,0 +1,18 @@
+<h2>Compose</h2>
+<form>
+  {{input value="yourname@domain.tld" id="sender" type="hidden"}}
+  {{input value="sent" id="status" type="hidden"}}
+  <div class="form-group">
+    <label for="recipient">Recipient</label>
+    {{input value=recipient id="recipient" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    {{input value=subject id="subject" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="body">Body</label>
+    {{textarea value=body id="body" class="form-control" rows="15"}}
+  </div>
+  <button class="btn btn-success btn-block" {{action 'send'}}>Send</button>
+</form>

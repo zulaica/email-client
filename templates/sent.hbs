@@ -1,0 +1,17 @@
+<h2>Sent</h2>
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Recipient</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each email in model}}
+    <tr>
+      <td>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</td>
+      <td>{{#link-to 'email' email}}{{email.recipient}}{{/link-to}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

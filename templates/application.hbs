@@ -1,10 +1,16 @@
 <header class="jumbotron">
   <h1 class="container">JankyMail<sup>&trade;</sup> 2015<sup>&reg;</sup></h1>
-  <nav role='navigation'>
-    <ul class='nav nav-tabs nav-justified'>
-      <li role="presentation" class="active">{{#link-to 'inbox'}}Inbox{{/link-to}}</li>
-      <li role="presentation"><a href="#sent">Sent</a></li>
-      <li role="presentation"><a href="#sent">Compose</a></li>
+  <nav role="navigation">
+    <ul class="nav nav-tabs nav-justified">
+      {{#link-to "inbox" tagName="li" role="presentation"}}
+        <a nohref>Inbox</a>
+      {{/link-to}}
+      {{#link-to "sent" tagName="li" role="presentation"}}
+        <a nohref>Sent</a>
+      {{/link-to}}
+      {{#link-to "compose" tagName="li" role="presentation"}}
+        <a nohref>Compose</a>
+      {{/link-to}}
     </ul>
   </nav>
 </header>

@@ -20,7 +20,9 @@ a {
 }
 
 .nav-tabs.nav-justified > li > a,
-.nav-pills > li > a {
+.nav-pills > li > a,
+.btn,
+.form-control {
   border-radius: 0;
 }
 
@@ -33,7 +35,8 @@ a {
 
 table,
 .table,
-.btn {
+.btn,
+.form-control {
   font-size: 20px;
 }
 
@@ -50,15 +53,12 @@ section + section {
   margin-top: 4rem;
 }
 
-.btn,
-nav a {
-  -webkit-transition: .125s;
-  transition: .125s;
+td {
+  padding: 0 !important;
 }
 
 td a {
-  -webkit-transition: .0625s;
-  transition: .0625s;
+  padding: 8px;
 }
 
 .btn-primary {
@@ -69,7 +69,6 @@ td a {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  /*color: #2a9fd6;*/
   background: #2a9fd6 !important;
 }
 
