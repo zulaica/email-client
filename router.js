@@ -1,3 +1,3 @@
-EmailClient.Router.map(function() {
-
+EmailClient.Router.map(function(){
+  this.resource('inbox', {path: '/'});
 });
