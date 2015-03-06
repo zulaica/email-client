@@ -1,0 +1,12 @@
+<h2>Subject: {{ subject }}</h2>
+<h3>From: {{ sender }}</h3>
+<p>Body:</p>
+<section>
+{{ body }}
+</section>
+<section>
+  <ul class="nav nav-pills nav-justified">
+    <li role="presentation" class="disabled"><a href="#" class="btn btn-default">Reply to this email</a></li>
+    <li role="presentation">{{#link-to 'inbox' class="btn btn-primary"}}Go back to your inbox{{/link-to}}</li>
+  </ul>
+</section>

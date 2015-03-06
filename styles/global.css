@@ -1,6 +1,7 @@
 body {
   font-family: "VT323", monospace;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .jumbotron {
@@ -8,7 +9,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "VT323", monospace;
 }
 
@@ -17,7 +19,8 @@ a {
   cursor: default;
 }
 
-.nav-tabs.nav-justified > li > a {
+.nav-tabs.nav-justified > li > a,
+.nav-pills > li > a {
   border-radius: 0;
 }
 
@@ -29,7 +32,8 @@ a {
   }
 
 table,
-.table {
+.table,
+.btn {
   font-size: 20px;
 }
 
@@ -39,5 +43,9 @@ th + th {
 }
 
 nav {
+  margin-top: 4rem;
+}
+
+section + section {
   margin-top: 4rem;
 }

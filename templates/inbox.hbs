@@ -9,7 +9,7 @@
   <tbody>
   {{#each email in model}}
   <tr>
-    <td><a href="#">{{email.subject}}</a></td>
+    <td>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</td>
     <td><a href="#">{{email.sender}}</a></td>
   </tr>
   {{/each}}
