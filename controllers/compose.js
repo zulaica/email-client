@@ -6,9 +6,14 @@ EmailClient.ComposeController = Ember.Controller.extend({
         sender: "yourname@domain.tld",
         recipient: this.get("recipient"),
         body: this.get("body"),
-        the_status: "sent"
+        status: "sent"
       });
       newEmail.save();
+      this.set("subject", null);
+      this.set("sender", null);
+      this.set("recipient", null);
+      this.set("body", null);
+      this.set("status", null);
       this.transitionToRoute('sent');
     }
   }

@@ -3,5 +3,5 @@ EmailClient.Email = DS.Model.extend({
   sender: DS.attr(),
   recipient: DS.attr(),
   body: DS.attr(),
-  the_status: DS.attr()
+  status: DS.attr(),
 });
