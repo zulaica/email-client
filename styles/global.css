@@ -49,3 +49,31 @@ nav {
 section + section {
   margin-top: 4rem;
 }
+
+.btn,
+nav a {
+  -webkit-transition: .125s;
+  transition: .125s;
+}
+
+td a {
+  -webkit-transition: .0625s;
+  transition: .0625s;
+}
+
+.btn-primary {
+  background: transparent;
+  color: #2a9fd6;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  /*color: #2a9fd6;*/
+  background: #2a9fd6 !important;
+}
+
+.disabled a:hover {
+  background: #424242 !important;
+  border-color: #424242 !important;
+}
