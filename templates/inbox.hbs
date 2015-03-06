@@ -1,0 +1,17 @@
+<h2>Inbox</h2>
+<table class="table table-striped table-hover table-bordered">
+  <thead>
+    <tr>
+      <th>Subject</th>
+      <th>Sender</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{#each email in model}}
+  <tr>
+    <td><a href="#">{{email.subject}}</a></td>
+    <td><a href="#">{{email.sender}}</a></td>
+  </tr>
+  {{/each}}
+  </tbody>
+</table>
