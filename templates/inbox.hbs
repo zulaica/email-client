@@ -7,11 +7,11 @@
     </tr>
   </thead>
   <tbody>
-  {{#each email in model}}
-  <tr>
-    <td>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</td>
-    <td>{{#link-to 'email' email}}{{email.sender}}{{/link-to}}</td>
-  </tr>
-  {{/each}}
+    {{#each email in model}}
+    <tr>
+      <td>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</td>
+      <td>{{#link-to 'email' email}}{{email.sender}}{{/link-to}}</td>
+    </tr>
+    {{/each}}
   </tbody>
 </table>

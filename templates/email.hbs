@@ -1,5 +1,6 @@
 <h2>Subject: {{ subject }}</h2>
 <h3>From: {{ sender }}</h3>
+<h3>To: {{ recipient }}</h3>
 <p>Body:</p>
 <section>
 {{ body }}
@@ -7,6 +8,7 @@
 <section>
   <ul class="nav nav-pills nav-justified">
     <li role="presentation" class="disabled"><a nohref class="btn btn-default">Reply to this email</a></li>
+    <li role="presentation"><button class="btn btn-danger btn-block" {{action "delete"}}>Delete this email</button></li>
     <li role="presentation">{{#link-to 'inbox' class="btn btn-primary"}}Go back to your inbox{{/link-to}}</li>
   </ul>
 </section>

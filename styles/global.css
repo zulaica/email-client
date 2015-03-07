@@ -40,6 +40,11 @@ table,
   font-size: 20px;
 }
 
+.btn {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
 td + td,
 th + th {
   text-align: right;
@@ -63,16 +68,35 @@ td a {
 
 .btn-primary {
   background: transparent;
-  color: #2a9fd6;
+  color: #2a9fd6 !important;
+}
+  .btn-primary:hover,
+  .btn-primary:active,
+  .btn-primary:focus {
+    background: #2a9fd6 !important;
+    color: #fff !important;
+  }
+
+.btn-success {
+  background: transparent;
+  color: #77b300;
 }
 
-.btn-primary:hover,
-.btn-primary:active,
-.btn-primary:focus {
-  background: #2a9fd6 !important;
+.btn-danger {
+  background: transparent;
+  color: #cc0000;
 }
+  .btn-danger:hover,
+  .btn-danger:active,
+  .btn-danger:focus {
+    background: #cc0000 !important;
+  }
 
 .disabled a:hover {
   background: #424242 !important;
   border-color: #424242 !important;
+}
+
+.form-control {
+  background: #222;
 }
