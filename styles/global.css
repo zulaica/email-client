@@ -1,4 +1,5 @@
 body {
+  margin-bottom: 80px;
   font-family: "VT323", monospace;
   font-size: 20px;
   text-transform: uppercase;
@@ -17,6 +18,32 @@ h3 {
 a {
   display: block;
   cursor: default;
+}
+a::before {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: .125em;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 100;
+}
+a[href*="github.com"]::before {
+  content: "\f09b";
+}
+
+footer a {
+  display: inline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: inherit;
+  background-color: ##060606;
+  margin-bottom: 0;
+  padding-top: 10px;
+  border-top: 1px solid #d0dad8;
 }
 
 .nav-tabs.nav-justified > li > a,
@@ -50,6 +77,11 @@ th + th {
   text-align: right;
 }
 
+td + td + td,
+th + th + th {
+  text-align: center;
+}
+
 nav {
   margin-top: 4rem;
 }
@@ -60,6 +92,7 @@ section + section {
 
 td {
   padding: 0 !important;
+  vertical-align: middle !important;
 }
 
 td a {

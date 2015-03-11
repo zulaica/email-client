@@ -1,16 +1,18 @@
 <h2>Inbox</h2>
-<table class="table table-striped table-hover table-bordered">
+<table class="table table-striped table-hover">
   <thead>
     <tr>
       <th>Subject</th>
       <th>Sender</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
-    {{#each email in model}}
+    {{#each email in model itemController="email"}}
     <tr>
       <td>{{#link-to 'email' email}}{{email.subject}}{{/link-to}}</td>
       <td>{{#link-to 'email' email}}{{email.sender}}{{/link-to}}</td>
+      <td class="col-md-1"><button class="btn btn-danger btn-block" {{action "delete"}}>&times;</button></td>
     </tr>
     {{/each}}
   </tbody>
