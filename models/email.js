@@ -3,5 +3,6 @@ EmailClient.Email = DS.Model.extend({
   sender: DS.attr(),
   recipient: DS.attr(),
   body: DS.attr(),
-  status: DS.attr(),
+  label: DS.attr(),
+  mailbox: DS.belongsTo('mailbox', {async: true})
 });
